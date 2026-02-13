@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kritika ❤️ Aryan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  text-align: center;
+  font-family: Arial;
+  background-color: pink;
+  padding-top: 100px;
+}
+button {
+  padding: 15px 25px;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+#noBtn {
+  position: absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>Kritika, Will You Be My Valentine? 💖</h1>
+
+<button onclick="yesClicked()">YES ❤️</button>
+<button id="noBtn" onmouseover="moveBtn()">NO 😜</button>
+
+<script>
+function yesClicked() {
+  document.body.innerHTML = "<h1>I Love You Kritika ❤️<br>Forever Yours, Aryan 💖</h1>";
+}
+
+function moveBtn() {
+  var x = Math.random() * window.innerWidth;
+  var y = Math.random() * window.innerHeight;
+  document.getElementById("noBtn").style.left = x + "px";
+  document.getElementById("noBtn").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
